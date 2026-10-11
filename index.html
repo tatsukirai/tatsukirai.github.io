@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="sz.">
+  <title>RYM Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="starfield">
+  <span class="star star-one"></span>
+  <span class="star star-two"></span>
+  <span class="star star-three"></span>
+  <span class="star star-four"></span>
+  <span class="star star-five"></span>
+</div>
+  <main class="app">
+    <img src="logo.png" alt="RYM Search" class="logo">
+
+    <form id="searchForm" class="search-box" autocomplete="off">
+      <select id="filter" aria-label="Tipo de pesquisa">
+<option value="strm_l">Album</option>
+        <option value="strm_a,ss.rd">Artist</option>
+        <option value="strm_h,ss.rd">Genre</option>
+<option value="strm_des,ss.rd">Descriptor</option>
+        <option value="strm_relyear,ss.rd">Year</option>
+        
+        
+      </select>
+
+      <input
+        id="query"
+        type="search"
+        placeholder="Quotation marks may provide better results."
+        aria-label="Termo de pesquisa"
+        required
+      >
+
+      <button type="submit">🔎</button>
+    </form>
+<div class="year-buttons">
+<button id="yearButton" class="year-button" type="button" hidden>
+  50s
+</button>
+<button id="yearButton2" class="year-button" type="button" hidden>
+  60s
+</button>
+<button id="yearButton3" class="year-button" type="button" hidden>
+  70s
+</button>
+<button id="yearButton4" class="year-button" type="button" hidden>
+  80s
+</button>
+<button id="yearButton5" class="year-button" type="button" hidden>
+  90s
+</button>
+<button id="yearButton6" class="year-button" type="button" hidden>
+  00s
+</button>
+<button id="yearButton7" class="year-button" type="button" hidden>
+  10s
+</button>
+<button id="yearButton8" class="year-button" type="button" hidden>
+  20s
+</button>
+</div>
+
+<div class="collecao">
+<button id="collection" type= "button" hidden>
+coll.
+</button>
+</div>
+
+    <p id="status" class="status" aria-live="polite"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
